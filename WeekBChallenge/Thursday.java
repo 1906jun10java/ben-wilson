@@ -16,7 +16,7 @@ public class Thursday {
 	    }
 		
 		public static int triCalculator(int numberOfRows) {
-			int numberOfBlocks = numberOfRows * (numberOfRows + 1) / 2; //would also be equal to numberOfRows factorial but was unsure on how to implement.
+			int numberOfBlocks = numberOfRows * (numberOfRows + 1) / 2;
 			return numberOfBlocks;
 		}
 		
