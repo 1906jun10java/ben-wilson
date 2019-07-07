@@ -1,2 +1,2 @@
 # ben-wilson
-ben-wilson-repository 2.0
+ben-wilson-repository
