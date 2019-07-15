@@ -91,3 +91,20 @@ function rotate(array, n){
  Return true if balanced
  Return false if not balanced
 */
+
+function balanced(n){
+    let stack = [];
+    let map = {
+        '(' : ')',
+        '[' : ']',
+        '{' : '}'}
+    for (let x = 0; x < n.length; x++) {
+        if (n[x] === '(' || n[x] === '{' || n[x] === '[' ) {
+            stack.push(n[x]);}
+        else {
+            let last = stack.pop();
+            if (n[x] !== map[last]) return false;}
+    }
+        if (stack.length !== 0) {return false};
+    return true;
+}
